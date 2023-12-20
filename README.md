@@ -77,6 +77,8 @@ quarkus test
 The frontend component is constituted with only one webpage with an input and a button that allows the client to get
 the result of a number in the labseq sequence.
 
+This component uses Angular.js, HTML, TypeScript and CSS.
+
 ## Running the frontend application
 
 In order to be able to properly use the web page, the backend application must be turned on.
