@@ -1,0 +1,38 @@
+main{
+    display: flex; 
+    justify-content:center;
+    align-items:center;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+.calculator--container{
+    display: flex; 
+    justify-content:center;
+    align-items:center;
+    margin-top: 10px;
+}
+
+.calculator--container > *{
+    margin: 10px;
+}
+
+.result{
+    display: flex; 
+    justify-content:center;
+    align-items:center;
+    margin-top: 30px;
+    resize: vertical;
+    width: 100%;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin:10px;
+}

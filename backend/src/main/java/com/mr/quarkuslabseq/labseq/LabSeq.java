@@ -11,7 +11,6 @@ public class LabSeq {
 
     Cache<Integer, BigInteger> cache = Caffeine.newBuilder()
             .maximumSize(100000)
-            .expireAfterWrite(5, TimeUnit.MINUTES)
             .build();
 
     public LabSeq(){

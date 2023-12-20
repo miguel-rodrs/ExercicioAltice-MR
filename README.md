@@ -1,8 +1,11 @@
 # ExercicioAltice-MR
 
-This project was made in response of the exercise made by Altice Labs.
+This project was made in response of the exercise made by Altice Labs. The project has two parts, a backend handling the
+ server side and the frontend handling a web page to use together with the backend.
 
-It is constituted by a API that receives a number as a parameter and returns
+# Backend component
+
+The backend component is constituted by an API that receives a number as a parameter and returns
 the result the value in the labseq sequence. The labseq is defined as follows:
 (The "n" value is the number received as a parameter)
 
@@ -23,7 +26,7 @@ Java libraries and standards.
 
 ## API documentation
 
-The API documentation is in the `api_documentation.yaml` file in the root directory of the project.
+The API documentation is in the `backend\api_documentation.yaml` file in the root directory of the project.
 
 ## Running the backend application
 
@@ -68,3 +71,28 @@ You can access test mode by using the following command:
 ```shell script
 quarkus test
 ```
+
+# Frontend component
+
+The frontend component is constituted with only one webpage with an input and a button that allows the client to get
+the result of a number in the labseq sequence.
+
+## Running the frontend application
+
+In order to be able to properly use the web page, the backend application must be turned on.
+
+To run this application you must follow these steps:
+
+1) Install Node.js, you can find the download file on their website https://nodejs.org/en/download/current.
+
+2) Install the Angular by opening a cmd and writing the following command:
+```shell script
+npm install -g @angular/cli
+```
+3) Initiate the application by running the following command on the `frontend` directory:
+```shell script
+ng serve  
+```
+
+More information about how to setup Angular.js project in the following website https://radixweb.com/blog/how-to-install-angular-on-windows#Run.
+

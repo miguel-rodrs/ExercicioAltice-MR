@@ -1,0 +1,28 @@
+<main class="main">
+  <div>
+    <div class="form">
+      <h1>labseq sequence calculator</h1>
+      <div>  
+        The labseq 'l(n)' sequence is defined as follows: <br>
+        n=0 => l(0) = 0<br>
+        n=1 => l(1) = 1<br>
+        n=2 => l(2) = 0<br>
+        n=3 => l(3) = 1<br>
+        n>3 => l(n) = l(n-4) + l(n-3) <br><br>
+        Introduce the number on the input and click on the button to get the result.
+      </div>
+      <div class="calculator--container">
+        <input [(ngModel)]="inputData" type="number" name="" id="" placeholder="Enter the number here">
+        <button (click)="getLabSeq()">Calculate</button>
+      </div>
+    </div>
+    <textarea *ngIf="apiResponse" class="result" disabled="true">
+      {{ apiResponse }}
+    </textarea>
+  </div>
+</main>
+<footer>
+  Made by Miguel Neves Rodrigues 20/12/2023
+</footer>
+
+<router-outlet></router-outlet>
