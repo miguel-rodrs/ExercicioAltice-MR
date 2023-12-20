@@ -1,0 +1,21 @@
+openapi: 3.0.3
+info:
+    title: code-with-quarkus API
+    version: 1.0.0-SNAPSHOT
+paths:
+    /labseq/{n}:
+        get:
+            tags:
+                - Api
+            parameters:
+                - name: "n"
+                  in: path
+                  required: true
+                  schema:
+                      format: int32
+                      type: integer
+                      minimum: 0
+                      maximum: 99999
+            responses:
+                "200":
+                    description: OK
